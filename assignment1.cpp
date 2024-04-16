@@ -30,10 +30,10 @@ int customer :: input(int l){
     cout<<"Enter your branch: ";
     cin>>branch;
 
-
     srand(time(0));
-	for (int j=0; j<=RAND_MAX; j++)
-		ACno=(ACno*100000)+(rand()%100000000);
+    for (int i = 0; i < 10; i++) {
+        ACno = (ACno * 10) + (rand() % 10); 
+    }
 
     cout<<"Account No.: "<<ACno<<endl;
     Accno_arr[l]=ACno;
